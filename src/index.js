@@ -7,9 +7,9 @@ const listNames=[
   "juan",
   "Carlos"
 ]
-const showList = ({list})=>{
-    const contentList=[]
-    for(let t=0; t<=list.lenght; t++){
+const showList = (list)=>{
+    let contentList=[]
+    for(let t=0; t<list.length; t++){
       contentList.push(<li>{list[t]}</li>)
     }
     return contentList
