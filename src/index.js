@@ -3,16 +3,11 @@ import './index.css';
 import { render } from '@testing-library/react';
 
 
-const Saludo=({name, lang})=>{
+const Saludo=({name="carlos", lang="es"})=>{
+  const greeting=lang==="es"?"Hola: ":"Hello: ";
   return <h1>
-    {  lang==="es" && "Hola: "}
-    {  lang==="en" && "Hello: "}
-    {name}
+    {greeting+name}
     </h1>
-}
-Saludo.defaultProps={
-  name:"gerson",
-  lang: "es"
 }
 const App=()=>{
  return <div><Saludo></Saludo></div>
