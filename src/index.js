@@ -2,24 +2,9 @@ import React from 'react';
 import './index.css';
 import { render } from '@testing-library/react';
 
-const listNames=[
-  "gerson",
-  "juan",
-  "Carlos"
-]
-const showList = (list)=>{
-    let contentList=[]
-    for(let t=0; t<list.length; t++){
-      contentList.push(<li>{list[t]}</li>)
-    }
-    return contentList
-}
-const Names=()=>{
-  return <ul>{showList(listNames)}</ul>
-}
 
 const App=()=>{
- return <div><Names></Names></div>
+ return <div>HOla mundo</div>
 
 }
 
