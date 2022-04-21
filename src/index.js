@@ -9,7 +9,8 @@ const Counter=()=>{
     return ()=>{
       alert("i have deleted")
     }
-  },[])
+  }, [])
+  // we can use [] if we want execute just one time
   return <div>
     <p>Counter: {counter}</p>
     <button onClick={()=>setCounter(counter+1)}>+</button>
