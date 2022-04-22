@@ -11,12 +11,12 @@ const App = () => {
     useEffect(()=>{},[])
     return <div>
         <ProviderForm.Provider value={{name, setName, counter, setCounter}}>
-           <div onSubmit={(evt)=>{evt.stopPropagation()}}>
+           <div onSubmit={(evt)=>{evt.preventDefault()}}>
                <InputText id="name"></InputText>
                <Counter value="Increment"></Counter>
+               <Counter action={-1} value="Decrement"></Counter>
            </div>
         </ProviderForm.Provider>
-        <button onClick={()=>setCounter(counter+1)}>+</button>
         <p>Name: {name}</p>
         <p>Counter: {counter}</p>
     </div>
