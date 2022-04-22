@@ -1,9 +1,9 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 import './index.css';
 import { render } from '@testing-library/react';
 import ButtonGenero from './components/ButtonGenero';
 
-const sex={
+const sexes={
      masculine:{
          image: "/images/masculine.png",
          color: "blue",
@@ -18,9 +18,13 @@ const sex={
 // we created context
 export const Sex=React.createContext()
 const App=()=>{
+    const[sex, setSex]=useState(sexes.female)
  return <div>
-     <Sex.Provider value={sex.masculine}>
+     <Sex.Provider value={sex}>
          <ButtonGenero></ButtonGenero>
+         {/*the changes affect everything inside the provider*/}
+         <button onClick={()=>setSex(sexes.masculine)}>Masculine</button>
+         <button onClick={()=>setSex(sexes.female)}>Female</button>
      </Sex.Provider>
  </div>
 }
