@@ -1,11 +1,12 @@
 import React from 'react';
 import './index.css';
 import { render } from '@testing-library/react';
+import App from './App';
 
-
-const App=()=>{
- return <div>HOla mundo</div>
-
+const Principal=()=>{
+    return <>
+    <App></App>
+    </>
 }
 
-render(<App></App>, document.getElementById("root"))
+render(<Principal></Principal>, document.getElementById("root"))
