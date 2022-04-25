@@ -1,7 +1,7 @@
-.Area {
+.ContainerButton{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
+    align-content: center;
+    border-radius: 4px;
 }

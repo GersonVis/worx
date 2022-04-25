@@ -1,10 +1,12 @@
 .ImageEndStart{
     width: 50%;
     display: flex;
-
     overflow: hidden;
     flex-direction: row-reverse;
 }
 .NormalImage{
-
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,0 +1,23 @@
+.SocialBar {
+    width: 0px;
+    height: 0px;
+    position: sticky;
+    left: 0px;
+    top: 90%;
+}
+
+.ContentSocialBar {
+    width: 220px;
+    height: 30px;
+    transform: rotateZ(270deg);
+    transform-origin: left top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Normal{
+    border-radius: 0 0 15px 15px;
+}
+.TextAppBar{
+    margin-right: 8px;
+}
